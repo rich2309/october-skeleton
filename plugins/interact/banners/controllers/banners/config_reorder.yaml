@@ -1,0 +1,5 @@
+title: Banners
+modelClass: Interact\Banners\Models\Banner
+nameFrom: name
+toolbar:
+    buttons: reorder_toolbar

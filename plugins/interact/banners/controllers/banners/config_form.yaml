@@ -1,0 +1,11 @@
+name: Banners
+modelClass: Interact\Banners\Models\Banner
+form: $/interact/banners/models/banner/fields.yaml
+defaultRedirect: interact/banners/banners
+create:
+    redirect: 'interact/banners/banners/update/:id'
+    redirectClose: interact/banners/banners
+update:
+    redirect: interact/banners/banners
+    redirectClose: interact/banners/banners
+preview: {  }

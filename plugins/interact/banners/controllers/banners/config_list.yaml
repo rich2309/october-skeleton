@@ -1,0 +1,12 @@
+title: Banners
+modelClass: Interact\Banners\Models\Banner
+list: $/interact/banners/models/banner/columns.yaml
+recordUrl: 'interact/banners/banners/update/:id'
+noRecordsMessage: 'backend::lang.list.no_records'
+recordsPerPage: 20
+showSetup: true
+showCheckboxes: true
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
