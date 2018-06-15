@@ -10,24 +10,40 @@ description = "Default layout"
     <meta name="author" content="OctoberCMS">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="OctoberCMS">
-    <link href="{{ 'assets/compiled/css/style.css'|theme }}" rel="stylesheet">
+
+    <!-- LINK FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Barrio" rel="stylesheet">
+
+    <link href="{{ [
+        'assets/libs/font-awesome-4.7.0/css/font-awesome.css',
+        'assets/compiled/css/style.css',
+        'assets/compiled/css/bootstrap.css',
+        'assets/compiled/css/enovos-static.css']|theme }}" rel="stylesheet">
     {% styles %}
 </head>
 <body>
 
 <!-- Header -->
-<header id="layout-header">
-
+<header>
+    {% partial 'help_menu' %}
+    {% partial 'top_menu' %}
 </header>
 
 <!-- Content -->
-<section id="layout-content">
-    {% page %}
-</section>
+<div class="page-body">
+    {% partial 'side_menu' %}
+    <div id="container" class="ml-container" style="padding-bottom: 312px; margin-top: 70px" >
+        {% page %}
+    </div>
+</div>
+
 
 
 <!-- Scripts -->
-<script src="{{ 'assets/compiled/js/all.js'|theme }}"></script>
+
+<script src="https://www.enovos.lu/js/a3755c6.js"></script>
 {% framework extras %}
 {% scripts %}
 

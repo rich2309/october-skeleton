@@ -6,8 +6,10 @@ elixir.config.publicPath = 'themes/enovos/assets/compiled/';
 
 elixir(function (mix) {
     mix.sass('style.scss');
+    mix.less('bootstrap/bootstrap.less');
     mix.scripts([
-       'jquery.js',
+        'jquery.js',
+        'bootstrap/js/*.js',
        'app.js'
     ]);
     mix.livereload([

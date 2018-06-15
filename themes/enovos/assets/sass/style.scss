@@ -1,3 +1,36 @@
-h1 {
-    color: blue;
+a {
+    text-decoration: none !important;
+}
+
+
+
+/*------------------------
+Top menu
+------------------------*/
+.nav-list-primary {
+    li {
+        padding: 28px 13px;
+        a.item {
+            transition: all 0.5s ease;
+            text-transform: uppercase;
+        }
+        a.item.active {
+            color: #ff7900;
+        }
+    }
+}
+
+/*------------------------
+Side menu
+------------------------*/
+.nav-secondary {
+    li {
+        border-bottom: 1px solid #3d4957;
+        list-style: none;
+        .list-secondary {
+            a {
+                color: white !important;
+            }
+        }
+    }
 }

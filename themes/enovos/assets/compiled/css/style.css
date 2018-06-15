@@ -1,5 +1,33 @@
-h1 {
-  color: blue;
+a {
+  text-decoration: none !important;
+}
+
+/*------------------------
+Top menu
+------------------------*/
+.nav-list-primary li {
+  padding: 28px 13px;
+}
+
+.nav-list-primary li a.item {
+  transition: all 0.5s ease;
+  text-transform: uppercase;
+}
+
+.nav-list-primary li a.item.active {
+  color: #ff7900;
+}
+
+/*------------------------
+Side menu
+------------------------*/
+.nav-secondary li {
+  border-bottom: 1px solid #3d4957;
+  list-style: none;
+}
+
+.nav-secondary li .list-secondary a {
+  color: white !important;
 }
 
 /*# sourceMappingURL=style.css.map */

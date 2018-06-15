@@ -1,0 +1,23 @@
+<nav class="nav nav-help">
+    <ul>
+        <li class="sub-list-help">
+            <form class="help-search" action="/fr/Recherche" method="get" onsubmit="dataLayer.push({'event': 'enovos.floater.btn.search.'});">
+                <button type="submit" id="enovos_floater_btn_search"><i class="ico-help fa fa-search"></i></button>
+                <input type="text" class="mr-10" name="q">
+            </form>
+        </li>
+        <li class="sub-list-help">
+            <a class="sub-link-help" id="enovos_floater_btn_help" onclick="dataLayer.push({'event': 'enovos.floater.btn.help.'});" href="/fr/Particuliers/Assistance" style="color:white!important;">
+                <i class="ico-help fa fa-question-circle-o"></i>
+                <span class="title-help">
+                        Assistance
+                    </span>
+            </a>
+        </li>
+        <li class="sub-list-help">
+            <a class="sub-link-help" id="enovos_floater_btn_contact" onclick="dataLayer.push({'event': 'enovos.floater.btn.contact.'});" href="/fr/Particuliers/Contact?from=98">
+                <i class="ico-help fa fa-envelope-o"></i><span class="title-help">Contact</span>
+            </a>
+        </li>
+    </ul>
+</nav>
